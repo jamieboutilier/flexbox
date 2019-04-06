@@ -14,6 +14,10 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+  background: url(../img/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
 }
 
 /*
@@ -95,38 +99,67 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+/*Large Background Image*/
 html {
-  background-color: #fff;
-  height: 100%;
+  background: url("../img/background.jpg") no-repeat center center fixed;
+	height: 100%:
+   /* set height to 100% - these are important for allowing content to vertically align */
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
-  font-size: 1.25em;
-  height: 100%;
+	height: 100%;
+  /* set height to 100% - these are important for allowing content to vertically align */
 }
 
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
-	display: flex; 
-	justify-content: space-between;	
-  font-weight: 700;
+  /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
+
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-	display: flex; 
-	justify-content: center;
-	align-items: center;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: .7em;
+  background-color: tomato;
   height: 300px;
-	width: 30%;
+  width: 30%;
+  font-family: 'Questrial', sans-serif;
+  padding: 1em; 
 }
+
+
+#content {
+  /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #;
+  background: tomato;
+  color: #fff;
+  font-family: 'Dokdo', cursive;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  border-radius: 10px;
+  padding: 0px 30px;
+  width: 300px;
+  height: 300px;
+}
+
+#content p span {
+  font-family: 'Dokdo', cursive;
+}
+
 
 
 
@@ -210,6 +243,10 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
